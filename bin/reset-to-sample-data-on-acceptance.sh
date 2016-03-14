@@ -1,5 +1,7 @@
-APP_NAME=app-prototype-acceptance
+#!/bin/sh
+set -x
+source "config.cfg"
 
-heroku pg:reset DATABASE_URL --confirm $APP_NAME
-heroku run rake db:migrate -a $APP_NAME
-heroku run rake db:seed db:sample_data -a $APP_NAME
+heroku pg:reset DATABASE_URL --confirm $ACCEPTANCE
+heroku run rake db:migrate -a $ACCEPTANCE
+heroku run rake db:seed db:sample_data -a $ACCEPTANCE

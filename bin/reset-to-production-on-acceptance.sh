@@ -1,3 +1,5 @@
-APP_NAME=app-prototype-acceptance
+#!/bin/sh
+set -x
+source "config.cfg"
 
-heroku pg:copy app-prototype::DATABASE_URL DATABASE_URL --confirm $APP_NAME
+heroku pg:copy $PRODUCTION::DATABASE_URL DATABASE_URL --confirm $ACCEPTANCE
