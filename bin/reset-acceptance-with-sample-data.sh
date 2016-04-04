@@ -1,6 +1,6 @@
 #!/bin/sh
 set -x
-source "config.cfg"
+source "reset-config.cfg"
 
 heroku pg:reset DATABASE_URL --confirm $ACCEPTANCE
 heroku run rake db:migrate -a $ACCEPTANCE

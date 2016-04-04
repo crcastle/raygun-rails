@@ -1,6 +1,6 @@
 #!/bin/sh
 set -x
-source "config.cfg"
+source "reset-config.cfg"
 
 DEVELOPMENT_DB="${DB_NAME}_development"
 
