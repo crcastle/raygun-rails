@@ -1,5 +1,5 @@
 {
-  "name": "Raygun Rails Application Template",
+  "name": "Raygun Rails App Template",
   "description": "Rails application generator that builds applications with the common customization stuff already done.",
   "repository": "https://github.com/crcastle/raygun",
   "website": "https://github.com/carbonfive/raygun",
